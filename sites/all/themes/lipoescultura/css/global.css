@@ -1,0 +1,685 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/*global*/
+@font-face {
+    font-family: 'champagne__limousinesregular';
+    src: url('fonts/champagne__limousines-webfont.eot');
+    src: url('fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagne__limousines-webfont.woff') format('woff'),
+         url('fonts/champagne__limousines-webfont.ttf') format('truetype'),
+         url('fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagne__limousinesbold';
+    src: url('fonts/champagne__limousines_bold-webfont.eot');
+    src: url('fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagne__limousines_bold-webfont.woff') format('woff'),
+         url('fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
+         url('fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'journal';
+    src: url('fonts/journal-webfont.eot');
+    src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/journal-webfont.woff') format('woff'),
+         url('fonts/journal-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans-100';
+    src:url('fonts/museosans-100.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans-300';
+    src: url('fonts/museosans-300-webfont.eot');
+    src: url('fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans-300-webfont.woff') format('woff'),
+         url('fonts/museosans-300-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans-500';
+    src: url('fonts/museosans-500-webfont.eot');
+    src: url('fonts/museosans-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans-500-webfont.woff') format('woff'),
+         url('fonts/museosans-500-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans-700';
+    src: url('fonts/museosans-700-webfont.eot');
+    src: url('fonts/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans-700-webfont.woff') format('woff'),
+         url('fonts/museosans-700-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin:0;
+	padding:0;
+}
+li, ul, lo{
+	list-style:none;
+}
+/*fin global */
+/* header */
+#zone-user-wrapper{
+    height: 120px;
+}
+#block-block-1{
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;	
+}
+#block-block-1 a.logo{
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 101px;
+    width: 125px;
+}
+#block-block-2{
+    float: right;
+    margin-top: 10px;
+}
+.front #block-block-2{
+    margin-right: 300px;
+}
+#block-block-2 h2,  #block-block-2 p {
+    background: url("../images/flecha.png") no-repeat scroll 10px 20px transparent;
+    color: #4D4D4D;
+    font-family: journal;
+    font-size: 51px;
+    letter-spacing: 0;
+    line-height: 0.9;
+    margin: 0;
+    text-align: right;
+}
+#block-block-2 p {
+	background:none;
+	color: #F15A24;
+}
+/* fin header */
+/* menu */
+.front #zone-branding-wrapper{
+    height: 50px;
+	background:#CE1951;
+	position:relative;
+	z-index:102;
+}
+.front #zone-branding-wrapper.fixed{
+    position: fixed;
+	top: 0;
+	z-index: 120;
+	left: 0px;
+	right: 0px;
+}
+
+.front #block-block-3{
+    background: url("../images/sombra-menu-2.png") no-repeat scroll center bottom transparent;
+    float: left;
+    padding-bottom: 10px;
+}
+.front #block-block-3.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.front #block-system-main-menu{
+    background: none repeat scroll 0 0 #CE1951;
+    border-radius: 8px 8px 8px 8px;
+    float: left;
+    overflow: hidden;
+    padding: 10px 0;
+}
+#block-system-main-menu.fixed {
+	position: fixed;
+	top: 20px;
+}
+#block-system-main-menu ul li {
+	float: left;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+#block-system-main-menu ul li a {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #0C1D30;
+    color: #FFFFFF;
+    display: block;
+    font-family: MuseoSans-500;
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 0 24px;
+    text-decoration: none;
+}
+#block-system-main-menu ul li a:hover, #block-system-main-menu ul li a.active  {
+	color:#6FDBFF
+}
+#block-system-main-menu ul li.first a {
+	background: url("../images/image-home.png") no-repeat scroll center -1px transparent;
+	border-left: medium none;
+	overflow: hidden;
+	text-indent: 99px;
+	width: 22px;
+}
+.ie7 #block-system-main-menu ul li.first a {
+	text-indent: -99px;
+}
+#block-system-main-menu ul li.first a:hover {
+	background: url("../images/image-home-hover.png") no-repeat scroll center -1px transparent;
+}
+#block-system-main-menu ul li.last a {
+	border-right: none
+}
+/* fin menu */
+/* slide */
+.front #zone-menu-wrapper{
+    height: 887px;
+}
+#block-block-4 .title {
+    margin-left: 10px;
+    margin-top: 74px;
+    width: 422px;
+}
+#block-block-4 .title h2{
+    border-bottom: 1px solid #146BC7;
+    color: #00182C;
+    font-family: MuseoSans-700;
+    font-size: 51px;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+#block-block-4 .title h2 span{
+    color: #146BC7;
+    display: block;
+	font-size:46px;
+    font-family: MuseoSans-500;
+}
+#block-block-4 .title p{
+    color: #051B32;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+}
+#block-block-4 .image-modelo{
+    background: url("../images/image-modelo.jpg") no-repeat scroll 0 0 transparent;
+    height: 599px;
+    position: absolute;
+    right: 220px;
+    top: -162px;
+    width: 308px;
+    z-index: -1;
+}
+#region-header-second{
+	position:relative;
+	z-index:99
+}
+#block-block-4 .miembros{
+    background: url("../images/image-miembros.jpg") no-repeat scroll 130px center transparent;
+    font-family: MuseoSans-300;
+    font-size: 14.41px;
+    margin-left: 10px;
+    padding: 24px 0;
+    width: 460px;
+}
+.front #block-block-9 .bg-right{
+    background: url("../images/sombra-form-left.png") no-repeat scroll left top #4F4053;
+    height: 100%;
+    opacity: 0.95;
+	filter:alpha(opacity=95);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+/* fin slide */
+/* content */
+#zone-header-wrapper{
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 80%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(80%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #ffffff 80%,#cccccc 100%); /* W3C */
+	position:relative;
+}
+#block-block-5, #block-views-testimonios-block, #block-views-galeria-de-imagenes-block, #block-block-7, #block-block-8{
+    margin-right: 40px;
+}
+#zone-header-wrapper .backg-top{
+    background: url("../images/sombra-header.png") no-repeat scroll center top transparent;
+    height: 4px;
+	position:absolute;
+	top:0;
+	width:100%
+}
+#block-block-5 .column-1 h1, #block-views-testimonios-block h2, #block-block-7 h1, #block-block-8 h1 {
+    background: url("../images/images-title-iconos.jpg") no-repeat scroll left 1px transparent;
+    color: #00182C;
+    font-family: MuseoSans-700;
+    font-size: 35px;
+    padding-left: 60px;
+}
+
+#block-views-galeria-de-imagenes-block h2.block-title{
+	
+	font-family: 'champagne__limousinesbold';
+	font-size:26px;
+	color:#CE1951;
+}
+
+#block-block-5 .column-1 h2, #block-block-5 .column-2 h2, #block-views-galeria-de-imagenes-block .view-header h2, #block-block-7 h2, #block-block-8 h2{
+    color: #333333;
+    font-family: MuseoSans-300;
+    font-size: 30px;
+    line-height: 1;
+}
+#block-block-5 .column-1 h2 span, #block-block-5 .column-2 h2 span, #block-views-galeria-de-imagenes-block .view-header h2 span, #block-block-7 h2 span, #block-block-8 h2 span{
+	color:#146BC7;
+	display:block;
+}
+#block-block-5 p, #block-block-7 #acercade .text p, #block-block-8 .content p{
+    color: #4D4D4D;
+    font-family: MuseoSans-100;
+    font-size: 13px;
+}
+#block-block-5 .column-2, #block-block-5 .column-3{
+	overflow:hidden;
+	position:relative;
+}
+.ie7 #block-block-5 .column-2{
+	margin-bottom:20px
+}
+.ie7 #block-block-4{
+	padding-top:74px
+}
+#block-block-5 .column-2 h2{
+    border-right: 1px solid;
+    float: left;
+    margin: 0 40px 0 0;
+    padding: 8px 30px 8px 0;
+}
+#block-block-5 .column-3 p{
+    float: left;
+    margin-bottom: 30px;
+    width: 399px;
+}
+
+#block-block-5 .column-3 .img{
+    background: url("../images/image-procedimientos.jpg") no-repeat scroll 0 0 transparent;
+    height: 241px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 252px;
+}
+
+#block-block-5{
+    background: url("../images/sombra.png") no-repeat scroll center bottom transparent;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+#block-block-5 ul, #faqs ul {
+   margin-left:40px;
+}
+
+#block-block-5 ul li, #faqs ul li{
+   color: #4D4D4D;
+    font-family: MuseoSans-100;
+    font-size: 13px;
+	list-style: disc outside none;
+}
+
+#block-views-testimonios-block{
+    background: url("../images/image-galeria.png") no-repeat scroll left 70px transparent;
+    height: 280px;
+    padding-top: 40px;
+    position: relative;
+}
+#block-views-testimonios-block h2{
+    background-position: left -102px;
+    font-family: 'journal';
+    font-size: 55px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+#block-views-testimonios-block #views_slideshow_cycle_main_testimonios-block, #block-views-testimonios-block .views-slideshow-controls-bottom {
+    margin-left: 240px;
+}
+#block-views-testimonios-block .views-field-body p{
+    color: #333333;
+    font-family: MuseoSans-100;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1;
+}
+#block-views-testimonios-block .views-slideshow-controls-bottom .views-slideshow-pager-field-item{
+    background: url("../images/bg-control-testimonio.png") no-repeat scroll 0 bottom transparent;
+    cursor: pointer;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.6;
+	filter:alpha(opacity=60);
+    padding-bottom: 8px;
+}
+#block-views-testimonios-block .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover, #block-views-testimonios-block .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active{
+	background-position:-34px bottom;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+#block-views-testimonios-block .views-field-title{
+    bottom: -40px;
+    color: #146BC7;
+    font-family: journal;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+}
+.front #section-content{
+	display:none
+}
+#block-views-galeria-de-imagenes-block{
+    padding-left: 273px;
+    width: 350px;
+}
+
+#block-block-7{
+    background: url("../images/sombra.png") no-repeat scroll center top transparent;
+    margin-top: 10px;
+    padding-top: 43px;
+}
+#block-block-7 h1{
+    background-position: 0 -316px;
+}
+#block-block-7 h2 {
+    font-size: 48px;
+}
+#block-block-7 .text h2{
+	font-size:30px
+}
+#block-block-7 #acercade .imag-bg{
+    background: url("../images/images-bg-acercade.jpg") no-repeat scroll 0 -90px transparent;
+    height: 325px;
+    left: -160px;
+    position: absolute;
+    width: 800px;
+}
+#block-block-7 #acercade .header{
+    background: url("../images/sombra.png") no-repeat scroll center bottom transparent;
+    height: 328px;
+    position: relative;
+}
+#block-block-7 #acercade .header h2{
+	float: left;
+    margin-left: 10px;
+    margin-top: 80px;
+	position:relative;
+}
+#block-block-7 #acercade .header .img-dr{
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    width: 242px;
+}
+#block-block-7 #acercade .miembros {
+    background: url("../images/image-miembros-2.png") no-repeat scroll 0 0 transparent;
+    bottom: 40px;
+    height: 94px;
+    position: absolute;
+    right: 65px;
+    width: 173px;
+    z-index: 1;
+}
+#block-block-7 #acercade .text {
+    clear: both;
+    margin-top: 60px;
+}
+#block-block-8{
+    background: url("../images/sombra.png") no-repeat scroll center top transparent;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-top: 43px;
+}
+#block-block-8 h1 {
+    background-position: 0 -434px;
+}
+#block-block-8 .contenido h2{
+    background: url("../images/sombra-title.png") no-repeat scroll left bottom transparent;
+    padding-bottom: 14px;
+}
+#block-block-8 .contenido{
+    background: none repeat scroll 0 0 #EDF7F7;
+    padding: 60px 40px;
+}
+#block-block-8 .contenido h3 {
+	font-family:"MuseoSans-300";
+	font-size:20px;
+	color:#4D4D4D;
+}
+/* fin content */
+/* formulario */
+#block-block-10 {
+    margin-left: 24px;
+    position: absolute;
+    top: -800px;
+    width: 200px;
+    z-index: 99;
+}
+
+#region-menu{
+	background: url("../images/modelo.png") no-repeat scroll -57px 0px transparent;
+	display:block;
+	padding-left:40px;
+}
+
+#block-block-10 .contenido{
+    position: fixed;
+    width: 200px;
+}
+#block-block-10 h2{
+    border-bottom: 1px solid #475E78;
+    color: #FFFF00;
+    font-family: MuseoSans-700;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#block-block-10 .half{
+    float: left;
+    margin: 4px 0;
+    position: relative;
+    width: 98px;
+} 
+#block-block-10 .top{
+    border-bottom: 1px solid #475E78;
+    border-top: 1px solid #182637;
+    overflow: hidden;
+    padding-bottom: 6px;
+    padding-top: 10px;
+}
+#block-block-10 .buttom {
+    border-bottom: 1px solid #475E78;
+    border-top: 1px solid #182637;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+#block-block-10  .info{
+    border-top: 1px solid #182637;
+    color: #FFFFFF;
+    font-family: MuseoSans-100;
+    font-size: 11px;
+    letter-spacing: 0;
+    padding-top: 15px;
+}
+#block-block-10 .half.country{
+    height: 29px;
+}
+#block-block-10 .half.name, #block-block-10 .half.phone, #block-block-10 .half.country, #block-block-10 .half.captcha{
+    margin-right: 2px;
+} 
+#block-block-10 .half.mail, #block-block-10 .half.descriptions{
+    width: 196px;
+} 
+#block-block-10 .half input, #block-block-10 .half select, #block-block-10 .half textarea, #block-block-10 .half.image img{
+    background: url("../images/cajas-form.png") no-repeat scroll left 1px transparent;
+    border: medium none;
+    box-shadow: none;
+    height: 29px;
+    padding: 2px 7px;
+    width: 98px;
+    color: #000000;
+    font-family: MuseoSans-300;
+    font-size: 12px;
+}
+.ie7 #block-block-10 .half input, .ie7 #block-block-10 .half select, .ie7 #block-block-10 .half textarea, .ie7 #block-block-10 .half.image img{
+    height: 22px;
+	padding-top:6px;
+    width:84px;
+}
+.ie8 #block-block-10 .half input, .ie8 #block-block-10 .half select, .ie8 #block-block-10 .half textarea, .ie8 #block-block-10 .half.image img{
+	padding-top:6px;
+}
+#block-block-10 .half.mail input{
+    background-position: 0 -74px;
+    width: 196px;
+} 
+#block-block-10 .half.descriptions textarea{
+    background-position: 0 -112px;
+    height: 40px !important;
+    padding: 6px;
+    width: 100%;
+}
+#block-block-10 .half select {
+    height: 30px !important;
+    left: 0;
+    top: 0;
+}
+#block-block-10 .half .styleselect{
+    background: url("../images/cajas-form.png") no-repeat scroll 0 -36px transparent;
+    color: #000000;
+    font-family: MuseoSans-300;
+    font-size: 12px;
+    height: 16px;
+    line-height: 1.6;
+    overflow: hidden;
+    padding: 6px 30px 8px 8px;
+    width: 59px;
+}
+#block-block-10 input.form-submit{
+    background: url("../images/cajas-form.png") no-repeat scroll -2px -181px transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #323200;
+    font-family: MuseoSans-500;
+    font-size: 25px;
+    font-style: italic;
+    height: 44px;
+    width: 194px;
+    text-shadow: none;
+}
+#block-block-10 input.form-submit:hover{
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+/* fin formulario */
+#zone-footer-wrapper{
+    border-top: 1px solid #CCCCCC;
+    padding: 10px 0;
+}
+#zone-footer-wrapper .copyright{
+    font-family: MuseoSans-100;
+    font-size: 12px;
+    margin-right: 280px;
+    text-align: right;
+}
+/* galeria */
+#block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row-item .views-field-field-imagen-galeria{
+    background: url("../images/sombra-img.jpg") no-repeat scroll right bottom #FFFFFF;
+    padding-bottom: 18px;
+}
+#block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row-item .views-field-field-imagen-galeria img{
+    border: 4px solid #FFFFFF;
+}
+#block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row{
+    width: 314px !important;
+	height: 392px;
+	
+}
+/* fin galeria */
+
+#block-block-12 ul li{
+	background: url("../images/numeros-link.png") no-repeat scroll 0px 0px transparent;
+	height:40px;
+	padding-left:45px;
+	color:#CE1951;
+	font-family: 'champagne__limousinesregular';
+	font-size:18px;
+}
+
+#block-block-12 ul .menu-link-2{
+	background-position:0px -39px;	
+}
+
+
+#block-block-12 ul .menu-link-3{
+	background-position:0px -79px;	
+}
+
+#block-block-12{
+	padding-left: 280px;
+    padding-top: 80px;
+    width: 371px;	
+}
+#block-block-12 h1{
+	font-family: 'champagne__limousinesbold';
+	color:#465863;
+	font-size:36px;
+	line-height:1em;
+	margin-bottom:0px;
+}
+#block-block-12 .content .content h2{
+	font-family: 'champagne__limousinesbold';
+	color:#CE1951;
+	font-size:26px;
+	line-height:1em;
+	border-bottom:2px solid #5C0F57;
+	padding-bottom:7px;
+	width: 253px;
+	margin-bottom:10px;
+}
+
+#block-block-12 h2{
+	font-family: 'champagne__limousinesbold';
+	color:#CE1951;
+	font-size:26px;
+	line-height:1em;
+}
+#block-block-12 p{
+	font-family: 'MuseoSans-300';
+	color:#000;
+	font-size:14px;
+	line-height:1em;
+}
