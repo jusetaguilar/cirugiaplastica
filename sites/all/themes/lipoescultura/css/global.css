@@ -114,7 +114,7 @@ li, ul, lo{
 /* fin header */
 /* menu */
 .front #zone-branding-wrapper{
-    height: 50px;
+    height: 58px;
 	background:#CE1951;
 	position:relative;
 	z-index:102;
@@ -159,17 +159,17 @@ li, ul, lo{
     border-right: 1px solid #0C1D30;
     color: #FFFFFF;
     display: block;
-    font-family: MuseoSans-500;
-    font-size: 17px;
+    font-family: 'champagne__limousinesbold';
+    font-size: 24px;
     line-height: 1.4;
-    padding: 0 24px;
+    padding: 0 25px;
     text-decoration: none;
 }
 #block-system-main-menu ul li a:hover, #block-system-main-menu ul li a.active  {
 	color:#6FDBFF
 }
 #block-system-main-menu ul li.first a {
-	background: url("../images/image-home.png") no-repeat scroll center -1px transparent;
+	background: url("../images/image-home.png") no-repeat scroll center 7px transparent;
 	border-left: medium none;
 	overflow: hidden;
 	text-indent: 99px;
@@ -179,15 +179,26 @@ li, ul, lo{
 	text-indent: -99px;
 }
 #block-system-main-menu ul li.first a:hover {
-	background: url("../images/image-home-hover.png") no-repeat scroll center -1px transparent;
+	background: url("../images/image-home-hover.png") no-repeat scroll center 7px transparent;
 }
+
+
 #block-system-main-menu ul li.last a {
-	border-right: none
+    border-right: medium none;
+    font-family: 'MuseoSans-700';
+    font-size: 25px;
+    font-style: italic;
+    height: 34px;
+    letter-spacing: 1px;
+    padding-left: 73px;
+    position: relative;
+    text-shadow: 1px 2px 1px #808080;
+    width: 143px;
 }
 /* fin menu */
 /* slide */
 .front #zone-menu-wrapper{
-    height: 887px;
+    height: 964px;
 }
 #block-block-4 .title {
     margin-left: 10px;
@@ -250,13 +261,6 @@ li, ul, lo{
 /* fin slide */
 /* content */
 #zone-header-wrapper{
-	background: #ffffff; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 80%, #cccccc 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(80%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 80%,#cccccc 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #ffffff 80%,#cccccc 100%); /* W3C */
 	position:relative;
 }
 #block-block-5, #block-views-testimonios-block, #block-views-galeria-de-imagenes-block, #block-block-7, #block-block-8{
@@ -270,11 +274,14 @@ li, ul, lo{
 	width:100%
 }
 #block-block-5 .column-1 h1, #block-views-testimonios-block h2, #block-block-7 h1, #block-block-8 h1 {
-    background: url("../images/images-title-iconos.jpg") no-repeat scroll left 1px transparent;
-    color: #00182C;
-    font-family: MuseoSans-700;
-    font-size: 35px;
-    padding-left: 60px;
+    background: url("../images/images-title-iconos.png") no-repeat scroll left 1px transparent;
+    color: #4F4053;
+    font-family: 'champagne__limousinesbold';
+    font-size: 36px;
+   	height: 56px;
+    margin-bottom: 10px;
+    padding-left: 79px;
+    padding-top: 8px;
 }
 
 #block-views-galeria-de-imagenes-block h2.block-title{
@@ -355,7 +362,7 @@ li, ul, lo{
     position: relative;
 }
 #block-views-testimonios-block h2{
-    background-position: left -102px;
+    background-position: left -84px;
     font-family: 'journal';
     font-size: 55px;
     letter-spacing: 2px;
@@ -401,6 +408,7 @@ li, ul, lo{
 #block-views-galeria-de-imagenes-block{
     padding-left: 273px;
     width: 350px;
+	height:448px;
 }
 
 #block-block-7{
@@ -409,7 +417,7 @@ li, ul, lo{
     padding-top: 43px;
 }
 #block-block-7 h1{
-    background-position: 0 -316px;
+    background-position: 0 -311px;
 }
 #block-block-7 h2 {
     font-size: 48px;
@@ -437,7 +445,9 @@ li, ul, lo{
 }
 #block-block-7 #acercade .header .img-dr{
     float: left;
+    margin-bottom: 30px;
     margin-left: 20px;
+    margin-top: -94px;
     position: relative;
     width: 242px;
 }
@@ -452,7 +462,7 @@ li, ul, lo{
 }
 #block-block-7 #acercade .text {
     clear: both;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 #block-block-8{
     background: url("../images/sombra.png") no-repeat scroll center top transparent;
@@ -461,15 +471,16 @@ li, ul, lo{
     padding-top: 43px;
 }
 #block-block-8 h1 {
-    background-position: 0 -434px;
+    background-position: 0 -426px;
 }
 #block-block-8 .contenido h2{
     background: url("../images/sombra-title.png") no-repeat scroll left bottom transparent;
     padding-bottom: 14px;
 }
 #block-block-8 .contenido{
-    background: none repeat scroll 0 0 #EDF7F7;
-    padding: 60px 40px;
+    background: url("../images/bg-testimonios.png") no-repeat scroll -18px 0 transparent;
+    padding: 55px 40px 60px 76px;
+    width: 657px;
 }
 #block-block-8 .contenido h3 {
 	font-family:"MuseoSans-300";
@@ -481,19 +492,18 @@ li, ul, lo{
 #block-block-10 {
     margin-left: 24px;
     position: absolute;
-    top: -800px;
+    top: -940px;
     width: 200px;
     z-index: 99;
 }
 
 #region-menu{
-	background: url("../images/modelo.png") no-repeat scroll -57px 0px transparent;
+	background: url("../images/modelo.png") no-repeat scroll 7px 0px transparent;
 	display:block;
-	padding-left:40px;
+	padding-left:86px;
 }
 
 #block-block-10 .contenido{
-    position: fixed;
     width: 200px;
 }
 #block-block-10 h2{
@@ -505,16 +515,16 @@ li, ul, lo{
     letter-spacing: 0;
     margin-bottom: 0;
     text-align: center;
+	display:none;
 }
 #block-block-10 .half{
     float: left;
     margin: 4px 0;
     position: relative;
-    width: 98px;
+    width: 92px;
 } 
 #block-block-10 .top{
     border-bottom: 1px solid #475E78;
-    border-top: 1px solid #182637;
     overflow: hidden;
     padding-bottom: 6px;
     padding-top: 10px;
@@ -530,7 +540,7 @@ li, ul, lo{
     border-top: 1px solid #182637;
     color: #FFFFFF;
     font-family: MuseoSans-100;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0;
     padding-top: 15px;
 }
@@ -551,8 +561,9 @@ li, ul, lo{
     padding: 2px 7px;
     width: 98px;
     color: #000000;
-    font-family: MuseoSans-300;
-    font-size: 12px;
+    font-family: arial;
+    font-size: 9px;
+    font-weight: bold;
 }
 .ie7 #block-block-10 .half input, .ie7 #block-block-10 .half select, .ie7 #block-block-10 .half textarea, .ie7 #block-block-10 .half.image img{
     height: 22px;
@@ -592,7 +603,7 @@ li, ul, lo{
     background: url("../images/cajas-form.png") no-repeat scroll -2px -181px transparent;
     border: medium none;
     box-shadow: none;
-    color: #323200;
+    color: #CE1951;
     font-family: MuseoSans-500;
     font-size: 25px;
     font-style: italic;
@@ -615,13 +626,19 @@ li, ul, lo{
     margin-right: 280px;
     text-align: right;
 }
+
+#zone-menu{
+	 background: url("../images/sombra-model.png") no-repeat scroll 0px bottom transparent;
+	 padding-bottom: 10px;
+}
+
 /* galeria */
 #block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row-item .views-field-field-imagen-galeria{
     background: url("../images/sombra-img.jpg") no-repeat scroll right bottom #FFFFFF;
     padding-bottom: 18px;
 }
 #block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row-item .views-field-field-imagen-galeria img{
-    border: 4px solid #FFFFFF;
+    border: 4px solid #CCC;
 }
 #block-views-galeria-de-imagenes-block .views-slideshow-cycle-main-frame-row{
     width: 314px !important;
@@ -632,12 +649,18 @@ li, ul, lo{
 
 #block-block-12 ul li{
 	background: url("../images/numeros-link.png") no-repeat scroll 0px 0px transparent;
-	height:40px;
-	padding-left:45px;
 	color:#CE1951;
 	font-family: 'champagne__limousinesregular';
-	font-size:18px;
+	font-size: 17px;
+    height: 35px;
+    padding-left: 37px;
+    padding-top: 3px;
 }
+
+#block-block-12 .content-menu{
+	width:339px;	
+}
+
 
 #block-block-12 ul .menu-link-2{
 	background-position:0px -39px;	
@@ -649,9 +672,10 @@ li, ul, lo{
 }
 
 #block-block-12{
-	padding-left: 280px;
+	margin-bottom: 28px;
+    padding-left: 280px;
     padding-top: 80px;
-    width: 371px;	
+    width: 312px;	
 }
 #block-block-12 h1{
 	font-family: 'champagne__limousinesbold';
@@ -682,4 +706,11 @@ li, ul, lo{
 	color:#000;
 	font-size:14px;
 	line-height:1em;
+}
+
+#block-block-12 .content .content{
+	margin-bottom:60px;	
+}
+#block-block-8 p{
+	width: 568px;
 }
