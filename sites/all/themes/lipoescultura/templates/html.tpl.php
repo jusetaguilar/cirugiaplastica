@@ -1,5 +1,5 @@
 <?php print $doctype; ?>
-<!--[if IE 7]><html class="ie7 ie"> <![endif]-->
+<!--[if IE 7]><html class="ie7 ie explorer"> <![endif]-->
 <!--[if IE 8]><html class="ie8 ie"> <![endif]-->
 <!--[if IE 9]><html class="ie9"> <![endif]-->
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf->version . $rdf->namespaces; ?>>
